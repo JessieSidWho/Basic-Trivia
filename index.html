@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Gochi+Hand" rel="stylesheet">
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="assets/javascript/game.js"></script>
+    <title>Basic Trivia</title>
+
+</head>
+<body class="container-fluid" style="background-image: url('assets/images/dullSunset.jpg');" >
+    <!-- Row containing the title -->
+    <div class="row">
+        <div class="col-md-8 offset-2 text-center " style="font-family: 'Gochi Hand'; background-image: url('assets/images/logo.png'); background-repeat: no-repeat; background-position: center center;">
+            <div class="row">
+                <div class="col-md-12 display-1 text-center ">
+                    <br><br>
+                    TRIVIA
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Row containing the start button + where innerHTML will replace DIV content -->
+    <div class="row">
+        <div id="questions" class="col-md-8 offset-2 text-center">
+            <button id="start" type="button" class="btn btn-danger btn-lg mt-3 mb-3 pt-3 pb-3">START</button>
+            <h4>You have 10 seconds per question. <br> Press START to play!</h4>
+        </div>
+    </div>
+    
+</body>
+</html>
