@@ -27,18 +27,26 @@
 
     <!-- Row containing the start button + where innerHTML will replace DIV content -->
     <div class="row">
+
+        <!-- Start Button & Directions -->
+        <div id="start" class="col-md-8 offset-2 text-center">
+            <button  type="button" class="btn btn-danger btn-lg mt-3 mb-3 pt-3 pb-3">START</button>
+            <h4>You have 60 seconds to answer 6 questions. <br> Press START to play!</h4>
+        </div>
+
+
         <div id="questions" class="col-md-8 offset-2 text-center pt-3" style="color: black; background-color:rgba(250, 150, 20, .4);">
                 <!-- 1 -->
                 <p>What type of Pok&eacute;mon is Pikachu?</p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="Psychic">  Psychic &nbsp; &nbsp;
+                    <input type="radio" name="q1" value="wrong">  Psychic &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Thunder">  Thunder &nbsp; &nbsp;
+                    <input type="radio" name="q1" value="correct">  Thunder &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Fighting">  Fighting &nbsp; &nbsp;
+                    <input type="radio" name="q1" value="wrong">  Fighting &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -46,13 +54,13 @@
                 <p>Which is NOT a Legendary Pok&eacute;mon? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="Dialga">  Dialga &nbsp; &nbsp;
+                    <input type="radio" name="q2" value="wrong">  Dialga &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Lugia">  Lugia &nbsp; &nbsp;
+                    <input type="radio" name="q2" value="wrong">  Lugia &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Dragonite">  Dragonite &nbsp; &nbsp;
+                    <input type="radio" name="q2" value="correct">  Dragonite &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -60,13 +68,13 @@
                 <p>How many Pok&eacute;mon are in the 1st Generation? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="151">  151 &nbsp; &nbsp;
+                    <input type="radio" name="q3" value="correct">  151 &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="129">  129 &nbsp; &nbsp;
+                    <input type="radio" name="q3" value="wrong">  129 &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="149">  149 &nbsp; &nbsp;
+                    <input type="radio" name="q3" value="wrong">  149 &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -74,13 +82,13 @@
                 <p>What color is Ditto? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="Green">  Green &nbsp; &nbsp;
+                    <input type="radio" name="q4" value="wrong">  Green &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Yellow">  Yellow &nbsp; &nbsp;
+                    <input type="radio" name="q4" value="wrong">  Yellow &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Purple">  Purple &nbsp; &nbsp;
+                    <input type="radio" name="q4" value="correct">  Purple &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -88,13 +96,13 @@
                 <p>What is the name of baby Pikachu? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="Pachu">  Pachu &nbsp; &nbsp;
+                    <input type="radio" name="q5" value="wrong">  Pachu &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Pichu">  Pichu &nbsp; &nbsp;
+                    <input type="radio" name="q5" value="correct">  Pichu &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Pika">  Pika &nbsp; &nbsp;
+                    <input type="radio" name="q5" value="wrong">  Pika &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -102,77 +110,31 @@
                 <p>What color is Alohan Muk? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="Green">  Green &nbsp; &nbsp;
+                    <input type="radio" name="q6" value="wrong">  Green &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Purple">  Purple &nbsp; &nbsp;
+                    <input type="radio" name="q6" value="wrong">  Purple &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="Rainbow">  Rainbow &nbsp; &nbsp;
+                    <input type="radio" name="q6" value="correct">  Rainbow &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
-                <!-- 7 -->
-                <p>Is Kangaskhan a regional Pok&eacute;mon? </p>
-                <form>
-                  <label class="radio-inline">
-                    <input type="radio" name="Yes">  Yes &nbsp; &nbsp;
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="No">  No &nbsp; &nbsp;
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="Maybe So">  Maybe So &nbsp; &nbsp;
-                  </label>
-                </form>
-
-                <!-- 8
-                <p>Which region is Mr. Mime exclusive to? </p>
-                <form>
-                  <label class="radio-inline">
-                    <input type="radio" name="Canada">  Canada &nbsp; &nbsp;
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="Europe">  Europe &nbsp; &nbsp;
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="Russia">  Russia &nbsp; &nbsp;
-                  </label>
-                </form><br><br>
-
-                <!-- 9 
-                <p>What color is Shiny Sandshrew? </p>
-                <form>
-                  <label class="radio-inline">
-                    <input type="radio" name="Yellow">  Yellow &nbsp; &nbsp;
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="Purple">  Purple &nbsp; &nbsp;
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="Green">  Green &nbsp; &nbsp;
-                  </label>
-                </form><br><br>
-
-                <!-- 10 
-                <p>What is the highest level you can be in Pok&eacute;mon Go? </p>
-                <form>
-                  <label class="radio-inline">
-                    <input type="radio" name="40">  40 &nbsp; &nbsp;
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="50">  50 &nbsp; &nbsp;
-                  </label>
-                  <label class="radio-inline">
-                    <input type="radio" name="60">  60 &nbsp; &nbsp;
-                  </label>
-                </form><br><br> -->
+                <button id="submit" type="button" class="btn btn-warning btn-lg pt-2 pb-2 mb-4">SUMBIT</button>
 
         </div>
-        <div class="col-md-8 offset-2 text-center">
-            <button id="start" type="button" class="btn btn-danger btn-lg mt-3 mb-3 pt-3 pb-3">START</button>
-            <h4>You have 100 seconds to answer 10 questions. <br> Press START to play!</h4>
+
+        <!-- Timer column -->
+        <div class="col-md-2" >
+            <div id="timer" class=" text-center" style="position: fixed; font-family: Gochi Hand; font-size: 40px; color: white;"></div>
         </div>
+
+        <div id="reset" class="col-md-8 offset-2">
+          <div id="correct"></div>
+          <div id="wrong"></div>
+          <button></button>
+        </div>
+
     </div>
     
 </body>
