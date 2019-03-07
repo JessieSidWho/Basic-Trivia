@@ -58,7 +58,6 @@ $(document).ready(function(){
     timeStart = 60;
 
     clearInterval(intervalId);
-    intervalId = setInterval(decrement, 1000);
 
     $("#questions").hide();
     $("#timer").hide();
@@ -111,7 +110,7 @@ $(document).ready(function(){
     $("#questions").hide();
     $("#timer").hide();
     $("#reset").show();
-    clearInterval(intervalid);
+    clearInterval(intervalId);
     $(".answers").each(function(){
       // console.log($(this).is(":checked"));
       
@@ -122,7 +121,7 @@ $(document).ready(function(){
           if (ans == answerKey[q]) {
             correctAnswers++;
           } else {
-            wrongAnswers++
+            wrongAnswers++;
           }
       }
     });
@@ -142,6 +141,6 @@ $(document).ready(function(){
     intializeReset();
   });
 
-  intializeReset();
+  // intializeReset();
 
 });
