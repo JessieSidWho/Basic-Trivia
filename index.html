@@ -40,13 +40,13 @@
                 <p>What type of Pok&eacute;mon is Pikachu?</p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="q1" value="wrong">  Psychic &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question1" data-ans="1" value="Psychic">  Psychic &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q1" value="correct">  Thunder &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question1" data-ans="2" value="Thunder">  Thunder &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q1" value="wrong">  Fighting &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question1" data-ans="3" value="Fighting">  Fighting &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -54,13 +54,13 @@
                 <p>Which is NOT a Legendary Pok&eacute;mon? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="q2" value="wrong">  Dialga &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question2" data-ans="1" value="Dialga">  Dialga &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q2" value="wrong">  Lugia &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question2" data-ans="2" value="Lugia">  Lugia &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q2" value="correct">  Dragonite &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question2" data-ans="3" value="Dragonite">  Dragonite &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -68,13 +68,13 @@
                 <p>How many Pok&eacute;mon are in the 1st Generation? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="q3" value="correct">  151 &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question3" data-ans="1" value="151">  151 &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q3" value="wrong">  129 &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question3" data-ans="2" value="129">  129 &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q3" value="wrong">  149 &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question3" data-ans="3" value="149">  149 &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -82,13 +82,13 @@
                 <p>What color is Ditto? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="q4" value="wrong">  Green &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question4" data-ans="1" value="Green">  Green &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q4" value="wrong">  Yellow &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question4" data-ans="2" value="Yellow">  Yellow &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q4" value="correct">  Purple &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question4" data-ans="3" value="Purple">  Purple &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -96,13 +96,13 @@
                 <p>What is the name of baby Pikachu? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="q5" value="wrong">  Pachu &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question5" data-ans=1 value="Pachu">  Pachu &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q5" value="correct">  Pichu &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question5" data-ans=2 value="Pichu">  Pichu &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q5" value="wrong">  Pika &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question5" data-ans=3 value="Pika">  Pika &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -110,13 +110,13 @@
                 <p>What color is Alohan Muk? </p>
                 <form>
                   <label class="radio-inline">
-                    <input type="radio" name="q6" value="wrong">  Green &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="quesiton6" data-ans=1 value="Green">  Green &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q6" value="wrong">  Purple &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question6" data-ans=2 value="Purple">  Purple &nbsp; &nbsp;
                   </label>
                   <label class="radio-inline">
-                    <input type="radio" name="q6" value="correct">  Rainbow &nbsp; &nbsp;
+                    <input class="answers" type="radio" name="question6" data-ans=3 value="Rainbow">  Rainbow &nbsp; &nbsp;
                   </label>
                 </form><br><br>
 
@@ -129,12 +129,17 @@
             <div id="timer" class=" text-center" style="position: fixed; font-family: Gochi Hand; font-size: 40px; color: white;"></div>
         </div>
 
-        <div id="reset" class="col-md-8 offset-2">
-          <div id="correct"></div>
-          <div id="wrong"></div>
-          <button></button>
-        </div>
+        <!-- Reset and Answers page -->
 
+
+    </div>
+
+    <div id="reset" class="row">
+      <div class="col-md-8 offset-2 border text-center" style="color: black; background-color:rgba(250, 150, 20, .4);">
+        <div id="correct" class="text-center mb-2 mt-2">0</div>
+        <div id="wrong" class="text-center mb-3">0</div>
+        <button class="btn btn-primary btn-lg pt-2 pb-2 mb-4 mt-2">RESET</button>
+      </div>
     </div>
     
 </body>
